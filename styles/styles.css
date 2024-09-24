@@ -180,7 +180,7 @@ li {
     overflow: scroll;
     scroll-snap-type: x mandatory;
   }
-  .carrucel img{
+  .carrucel .slider{
     width: 100%;
     left: 0;
     position: sticky;
