@@ -174,7 +174,7 @@ li {
   }
   
   .carrucel{
-    width: 252px;
+    width: 300px;
     position: relative;
     display: flex;
     overflow: scroll;
