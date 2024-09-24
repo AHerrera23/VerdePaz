@@ -52,7 +52,7 @@ li {
     display: block;
   }
   .container {
-    height: 100vh;
+    height: 98vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
