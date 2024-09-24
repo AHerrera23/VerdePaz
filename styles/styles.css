@@ -2,150 +2,189 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
-body{
-    background-color: #DBFFA3;
+body {
+  background-color: #dbffa3;
 }
-h1{
-    font-family: "poppins", serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 32px;
+h1 {
+  font-family: "poppins", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
 }
-h2{
-    font-family: "poppins", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
+h2 {
+  font-family: "poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
 }
-h3{
-    font-family: "poppins", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
+h3 {
+  font-family: "poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
 }
-h4{
-    font-family: "poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
+h4 {
+  font-family: "poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
-li{
-    font-family: "poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
+li {
+  font-family: "poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
 }
-.mobile{
+.underline{
+    text-decoration: underline #89BD37 2px;
+}
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .desktop {
     display: none;
-}
+  }
+  .mobile {
+    display: block;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .navbar {
+    grid-row: 1/1;
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  .opciones {
+    padding-top: 2%;
+    padding-right: 8%;
+  }
+  .opciones li {
+    padding-left: 1rem;
+    color: #dbffa3;
+    display: inline;
+  }
+  .hover {
+    transition: 0.5s ease-in;
+  }
+  .hover:hover {
+    color: #085d36;
+    font-weight: bold;
+  }
 
-
-@media only screen and (max-width: 800px){
-    .desktop{
-        display: none;
-    }
-    .mobile{
-        display: block;
-    }
-    .container{
-        height: 100vh;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 16px;
-    }
-    .navbar{
-        grid-row: 1/1;
-        grid-column: 2/5;
-        display: flex;
-        flex-direction: row;
-        justify-content: right
-    }
-    .opciones{
-        padding-right: 8%;
-    }
-    .opciones li{
-        padding-left: 16px;
-        color: #DBFFA3;
-        display: inline;
-    }
-    .hover {
-        transition: 0.5s ease-in;
-    }
-    .hover:hover{
-        color:#085D36;
-        font-weight: bold;
-    }
-
-    .navbar img{
-        position:absolute;
-        z-index: -1;
-        width: 60%;
-    }
-    .logo{
-        margin-left: 16px;
-        margin-top: 9px;
-    }
-    .imagenFondo{
-        grid-row: 1/2;
-        grid-column: 1/5;
-        position: absolute;
-        z-index: -2;
-        gap: 16px;
-    }
-    .imagenFondo img{
-        width: 100vw;
-    }
-    .resena{
-        padding-top: 18%;
-        grid-row: 4/5;
-        grid-column: 1/5;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 32px;
-    }
-    .resena h2, h3{
-        margin: 0;
-    }
-    .voluntarios{
-        color: #085D36;
-    }
-    .proyecto{
-        color: #085D36;
-    }
-    .boton{
-        grid-row: 5/6;
-        grid-column: 1/5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .btn{
-        height: 45%;
-        width: 90%;
-        border-radius: 20px;
-        background-color: #085D36;
-        color: #DBFFA3;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .titulo{
-        grid-column: 1/5;
-        grid-row: 2/4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #085D36;
-    }
-    .titulo h1{
-        margin: 0;
-    }
-
-
+  .navbar img {
+    position: absolute;
+    z-index: -1;
+    width: 60%;
+  }
+  .logo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+  }
+  .logo img {
+    width: 4rem;
+  }
+  .imagenFondo {
+    grid-row: 1/5;
+    grid-column: 1/5;
+    z-index: -2;
+  }
+  .imagenFondo img {
+    width: 100%;
+  }
+  .resena {
+    padding-top: 4rem;
+    grid-row: 4/5;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .resena h2,
+  h3 {
+    margin: 0;
+  }
+  .voluntarios {
+    color: #085d36;
+  }
+  .proyecto {
+    color: #085d36;
+  }
+  .boton {
+    grid-row: 5/6;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    box-shadow: 10px 20px 19px -12px rgba(25,25,25,0.33);
+    -webkit-box-shadow: 10px 20px 19px -12px rgba(25,25,25,0.33);
+    -moz-box-shadow: 10px 20px 19px -12px rgba(25,25,25,0.33);
+    border: none;
+    height: 35%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #085d36;
+    color: #dbffa3;
+    font-size: 16px;
+    font-weight: bold;
+    animation: 0.5s ease-in;
+  }
+  .btn:hover{
+    background-color: #89BD37;
+  }
+  .titulo {
+    grid-column: 1/5;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #085d36;
+  }
+  .titulo h1 {
+    margin: 0;
+  }
+  /* seccion 2 */
+  .container-2{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #085d36;
+    color: #dbffa3;
+  }
+  
+  .carrucel{
+    width: 252px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .carrucel img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    scroll-snap-align: center;
+  }
 }
