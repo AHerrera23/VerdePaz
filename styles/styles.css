@@ -6,6 +6,7 @@ body {
 }
 body {
   background-color: #dbffa3;
+  font-family: "poppins",serif;
 }
 h1 {
   font-family: "poppins", serif;
@@ -30,6 +31,13 @@ h4 {
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
+}
+p{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+    margin: 0;
 }
 li {
   font-family: "poppins", serif;
@@ -188,5 +196,73 @@ li {
     position: sticky;
     object-fit: cover;
     scroll-snap-align: center;
+  }
+  .container-3{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #085d36;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .container-3 .linea{
+    width: 100vw;
+  }
+  .container-3 .plantando{
+    width: 50%;
+  }
+  .container-3 .composicion{
+    width: 100vw;
+  }
+  .container-4{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #085d36;
+    gap: 1rem;
+  }
+  .container-4 h2, p{
+    padding-left: 1rem;
+  }
+  .cardsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cards{
+    background-color: #085d36;
+    border-radius: 1.3rem;
+    height:171px ;
+    width: 328px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .cards img{
+    padding-left: 1rem;
+  }
+  .contenido{
+    color: #dbffa3;
+  }
+  .contenido h5{
+    font-size: 1.1rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .contenido p{
+    padding: 0;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+    color: #dbffa3;
+  }
+  .contenido a{
+    color: #89BD37;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
