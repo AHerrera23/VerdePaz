@@ -23,8 +23,8 @@
         <img src="images/navbar.svg" alt="imagen navbar" />
         <div class="opciones">
           <ul>
-            <li class="hover">Se parte</li>
-            <li class="hover">Campaña</li>
+            <a href="#seParte"><li class="hover">Se parte</li></a>
+            <a href="#campañas"><li class="hover">Campaña</li></a>
           </ul>
         </div>
       </div>
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="boton">
-        <button class="btn">Conoce mas de nosotros</button>
+        <button id="boton1" class="btn">Conoce mas de nosotros</button>
         <div class="arrow">
           <img
             src="images/arrow_drop_down_32dp_085D36_FILL0_wght400_GRAD0_opsz40.svg"
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <section class="container-2">
+    <section id="seccion-1" class="container-2">
       <div class="novedades">
         <h2>Novedades de la semana</h2>
       </div>
@@ -108,7 +108,7 @@
       </p>
       <img class="composicion" src="images/composicion1.png" alt="imagen compuesta" />
     </section>
-    <section class="container-4">
+    <section id="campañas" class="container-4">
       <h2>Nuestras campañas</h2>
       <p>
         En VerdePaz, contamos con diversas<br />campañas de concientización<br />ambiental
@@ -133,7 +133,30 @@
           </div>
         </div>
       </div>
+      <img class="linea" src="images/linea4.svg" alt="linea divisoria">
+      <div id="seParte" class="call">
+        <div class="borde">
+          <h2>vos tambien podes unirte a este movimiento</h2>
+        </div>
+      </div>
+      <div class="boton2">
+        <button class="btn">Se parte!</button>
+      </div>
     </section>
+    <footer>
+      <div class="contenidoFooter"> 
+        <img src="images/favicon.svg" alt="logo">
+        <hr>
+        <div class="iconos">
+          <a href="https://www.instagram.com/verde__paz/" target="_blank" rel="noopener noreferrer"><img src="images/Instagram.svg" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/@verde.paz" target="_blank" rel="noopener noreferrer"><img src="images/Tiktok.svg" alt="Tik tok"></a>
+        </div>
+        <hr>
+        <h5>Fundacion VerdePaz</h5>
+        <h5>Ubicado en los pinos, Quilmes, partido de Buenos Aires</h5>
+        <h6>@2040 verdepaz.org LLC All Rigths Reserved</h6>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
