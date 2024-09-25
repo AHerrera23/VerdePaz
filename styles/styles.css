@@ -238,33 +238,32 @@ li {
     background-color: #085d36;
     border-radius: 1.3rem;
     height:171px ;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 1rem;
-  }
-  .cards img{
-    padding-left: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
   }
   .contenido{
     color: #dbffa3;
+    width: 45%;
   }
   .contenido h5{
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
   }
 
   .contenido p{
     padding: 0;
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
     color: #dbffa3;
   }
   .contenido a{
     color: #89BD37;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 }
