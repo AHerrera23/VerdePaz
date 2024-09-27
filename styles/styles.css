@@ -284,7 +284,13 @@ span{
   .boton2 {
     width: 100vw;
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
+  }
+  .boton2 a{
+    width: 100vw;
+  
   }
   .btn {
     width: 80%;
