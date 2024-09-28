@@ -15,6 +15,14 @@
     />
   </head>
   <body>
+    <div class="container-mensaje" id="modal">
+      <div class="mensajeForm">
+        <img src="images/logo.svg" alt="imagen del logo">
+        <h3><span id="h3"></span> ya sos parte de <span>VerdePaz!</span>.
+          En instantes recibiras un correo a tu dirección de mail con la confirmación del proceso.</h3>
+          <a href="index.html"><button class="btn">Continuar</button></a>
+      </div>
+    </div>
     <div class="container-form">
       <div class="logo">
         <img src="images/logo.svg" alt="logo de verdePaz" />
@@ -31,27 +39,29 @@
         </h4>
       </div>
       <div class="formulario">
-        <div class="nombreApellido">
+        <form id="form">
+          <div class="nombreApellido">
             <div class="Nombre">
-                <h3>Nombre</h3>
-                <input type="text" value=" "/>
+              <h3>Nombre</h3>
+              <input id="to_name" type="text" name="to_name" value=" " />
             </div>
             <div class="Apellido">
-                <h3>Apellido</h3>
-                <input type="text" value=" ">
+              <h3>Apellido</h3>
+              <input id="to_apellido" type="text" name="to_apellido" value=" " />
             </div>
-        </div>
-        <div class="email">
+          </div>
+          <div class="email">
             <h3>Ingresa tu email</h3>
-            <input type="email" value=" ">
-        </div>
-        <div class="tel">
+            <input id="Email" type="text" name="Email" />
+          </div>
+          <div class="tel">
             <h3>Ingresa tu Numero telefonico</h3>
-            <input type="tel" value=" ">
-        </div>
-        <div class="botonForm">
-            <button class="btn">Enviar</button>
-        </div>
+            <input type="tel" name="cel" value=" " required maxlength="11" />
+          </div>
+          <div class="botonForm">
+            <button class="btn" type="submit" id="button">Enviar</button>
+          </div>
+        </form>
       </div>
     </div>
     <footer>
@@ -78,6 +88,15 @@
         <h6>@2040 verdepaz.org LLC All Rigths Reserved</h6>
       </div>
     </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("IjejnvpoEbRKZM3Mb");
+    </script>
     <script src="js/main-form.js"></script>
   </body>
 </html>
