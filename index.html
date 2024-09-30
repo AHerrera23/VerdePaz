@@ -20,11 +20,13 @@
         <img src="images/logo.svg" alt="logo de verdePaz" />
       </div>
       <div class="navbar">
-        <img src="images/navbar.svg" alt="imagen navbar" />
+        <img class="mobile" src="images/navbar.svg" alt="imagen navbar" />
+        <img class="desktop" src="images/navbar.png" alt="imagen navbar" />
         <div class="opciones">
           <ul>
             <a href="#seParte"><li class="hover">Se parte</li></a>
             <a href="#campañas"><li class="hover">Campaña</li></a>
+            <a class="desktop" href="#footer"><li class="hover">Redes</li></a>
           </ul>
         </div>
       </div>
@@ -32,10 +34,15 @@
         <h1>Bienvenidx a</h1>
         <img src="images/verdePaz.svg" alt="logo textual verdePaz" />
       </div>
-      <div class="imagenFondo mobile">
-        <img src="images/fondo.png" alt="imagen de fondo" />
+      <div class="imagenFondo">
+        <img
+          class="desktop"
+          src="images/fondo_deskt.png"
+          alt="imagen de fondo"
+        />
+        <img class="mobile" src="images/fondo.png" alt="imagen de fondo" />
       </div>
-      <div class="resena">
+      <div class="resena mobile">
         <div class="proyecto">
           <h2>+100</h2>
           <h3 class="underline">Proyectos</h3>
@@ -88,30 +95,24 @@
     </section>
     <section class="container-3">
       <img class="linea" src="images/linea2.svg" alt="linea divisora" />
-      <h2>¿Quienes somos?</h2>
-      <p>
-        Somos una organización no <br />gubernamental comprometida con la<br />conservación
-        y plantación de árboles.<br />Creemos que cada árbol es una semilla<br />de
-        esperanza para un planeta<br />más verde y saludable.
-      </p>
+      <h2 clas>¿Quienes somos?</h2>
+      <div class="quienesSomos">
+        <p class="parrafoQuienesSomos">
+          Somos una organización no <br />gubernamental comprometida con la<br />conservación
+          y plantación de árboles.<br />Creemos que cada árbol es una semilla<br />de
+          esperanza para un planeta<br />más verde y saludable.
+        </p>
+        <img src="images/quienesSomos1.svg" alt="imagen quiene somos" />
+      
+      </div>
+      <img class="linea-2 desktop" src="images/linea4.svg" alt="linea divisora" />
       <img
-        class="plantando"
-        src="images/quienesSomos1.svg"
-        alt="voluntarios plantando"
-      />
-      <img class="linea" src="images/linea3.svg" alt="linea divisoria" />
-      <p>
-        En VerdePaz velamos por los intereses<br />de la vida natural y de
-        aquellos que<br />fueron victimas de los descuidos y los<br />maltratos
-        de las empresas que<br />destruyeron el medio ambiente en<br />nuestra
-        ciudad afectando su salud.
-      </p>
-      <img
-        class="composicion"
-        src="images/composicion1.png"
-        alt="imagen compuesta"
-      />
+      class="composicion mobile"
+      src="images/composicion1.png"
+      alt="imagen compuesta"
+    />
     </section>
+
     <section id="campañas" class="container-4">
       <h2>Nuestras campañas</h2>
       <p>
@@ -141,7 +142,7 @@
           </div>
         </div>
       </div>
-      <img class="linea" src="images/linea4.svg" alt="linea divisoria" />
+      <img class="linea mobile" src="images/linea4.svg" alt="linea divisoria" />
       <div id="seParte" class="call">
         <div class="borde">
           <h2>Vos tambien podes unirte a este movimiento</h2>
@@ -153,10 +154,11 @@
         </a>
       </div>
     </section>
-    <footer>
+    <footer id="footer">
       <div class="contenidoFooter">
-        <img src="images/favicon.svg" alt="logo" />
+        <img class="logoFooter" src="images/favicon.svg" alt="logo" />
         <hr />
+        <h4>Seguinos en nuestras redes!</h4>
         <div class="iconos">
           <a
             href="https://www.instagram.com/verde__paz/"
